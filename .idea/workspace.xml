@@ -2,59 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73aab8e0-124c-449f-a180-11122f41f8be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS229" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output1/._SUCCESS.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output1/.part-00000.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output1/.part-00001.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output1/_SUCCESS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output2/._SUCCESS.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output2/.part-00000.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output2/.part-00001.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output2/_SUCCESS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/._SUCCESS.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/.part-00000.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/.part-00001.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/.part-00002.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/.part-00003.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/_SUCCESS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/._SUCCESS.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/.part-00000.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/.part-00001.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/.part-00002.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/.part-00003.crc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/_SUCCESS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Stanford.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/.idea/CS246.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/Homework1/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/Homework1/hw1_q1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/Homework1/hw1_q2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/data/browsing.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/data/pg100.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/data/soc-LiveJournal1Adj.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/hw0.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output1/part-00000" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output1/part-00001" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output2/part-00000" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output2/part-00001" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/part-00000" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/part-00001" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/part-00002" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_5/part-00003" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/part-00000" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/part-00001" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/part-00002" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS246/output_hw1_1/part-00003" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CS229" afterPath="$PROJECT_DIR$/CS229" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hw0.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hw0.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CS246/hw0.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -77,10 +26,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -134,11 +100,6 @@
             <path>
               <item name="Stanford" type="b2602c69:ProjectViewProjectNode" />
               <item name="Stanford" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Stanford" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Stanford" type="462c0819:PsiDirectoryNode" />
-              <item name="CS246" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,6 +182,14 @@
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
