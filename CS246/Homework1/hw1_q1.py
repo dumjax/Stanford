@@ -38,22 +38,22 @@ def list_common_friends(file_input, file_output):
 
 
 # test function
-def check_common_friends(user1, user2):
-    f = open("/Users/maximedumonal/Github/CS246/data/soc-LiveJournal1Adj.txt", 'rU')
-    g = open("/Users/maximedumonal/Github/CS246/data/soc-LiveJournal1Adj.txt", 'rU')
-    for line in f:
-        linesplit = line.strip().split("\t")
-        if linesplit[0] == user1:
-            output_1 = linesplit[1].split(",")
-            break
-
-    for line in g:
-        linesplit = line.strip().split("\t")
-        if linesplit[0] == user2:
-            output_2 = linesplit[1].split(",")
-            break
-
-    return set(output_1).intersection(output_2) #, set(output_1), set(output_2)
+# def check_common_friends(user1, user2):
+#     f = open("/Users/maximedumonal/Github/Stanford/CS246/data/soc-LiveJournal1Adj.txt", 'rU')
+#     g = open("/Users/maximedumonal/Github/Stanford/CS246/data/soc-LiveJournal1Adj.txt", 'rU')
+#     for line in f:
+#         linesplit = line.strip().split("\t")
+#         if linesplit[0] == user1:
+#             output_1 = linesplit[1].split(",")
+#             break
+#
+#     for line in g:
+#         linesplit = line.strip().split("\t")
+#         if linesplit[0] == user2:
+#             output_2 = linesplit[1].split(",")
+#             break
+#
+#     return set(output_1).intersection(output_2) #, set(output_1), set(output_2)
 
 
 if __name__ == '__main__':
