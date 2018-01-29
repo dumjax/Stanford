@@ -18,7 +18,7 @@ def manhattan_d(A, B):
 
 
 def euclidean_d(A, B):
-    return cdist(A, B, 'euclidean')
+    return cdist([A], B, 'euclidean')
 
 
 def manhattan_cost(X, centroids):
@@ -27,7 +27,8 @@ def manhattan_cost(X, centroids):
 
 
 def euclidean_cost(X, centroids):
-    return np.argmin(manhattan_d(X, centroids)), np.min(manhattan_d(X, centroids))
+    distances = euclidean_d(X, centroids)
+    return np.argmin(distances), np.min(distances)
 
 
 def problem2(file_input, centroids_init_file):
@@ -40,16 +41,24 @@ def problem2(file_input, centroids_init_file):
 
     points = X.flatMap(lambda l: np.array([[float(n) for n in l.split(" ")]]))
 
-    clusters_map = points.map(lambda p: (manhattan_cost(p, C), p)).map(lambda p: (p[0][0], p[1]))
+    k=20
+    costs = []
+    for i in range(k):
 
-    min_manhattan_dist_map = points.map(lambda p: (manhattan_cost(p, C), p)).map(lambda p: (p[1], p[0][1]))
+        clusters_map = points.map(lambda p: (manhattan_cost(p, C), p)).map(lambda p: (p[0][0], p[1]))
 
-    clusters = clusters_map.groupByKey().map(lambda c: np.mean([x for x in c[1]])).collect()
-    cost = 0
-    for point in clusters_map.collect():
-        cost += point[1][1]
+        print clusters_map.countByKey()
 
+        min_dist_map = points.map(lambda p: (manhattan_cost(p, C), p)).map(lambda p: (p[1], p[0][1]))
+        # min_dist_map = points.map(lambda p: (euclidean_cost(p, C), p)).map(lambda p: (p[1], p[0][1]))
+        cost = 0
+        for point in min_dist_map.collect():
+            cost += point[1]
+        costs.append(cost)
 
+        C = clusters_map.groupByKey().map(lambda c: np.mean([x for x in c[1]], 0)).collect()
+
+    return costs
 
 
 
