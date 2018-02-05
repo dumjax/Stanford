@@ -41,7 +41,7 @@ def problem2(file_input, centroids_init_file):
 
     points = X.flatMap(lambda l: np.array([[float(n) for n in l.split(" ")]]))
 
-    k=20
+    k = 20
     costs = []
     for i in range(k):
 
