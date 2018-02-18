@@ -31,7 +31,7 @@ def euclidean_cost(X, centroids):
     return np.argmin(distances), np.min(distances)
 
 
-def problem2(file_input, centroids_init_file):
+def problem2(file_input, centroids_init_file,norm='e'):
 
     conf = SparkConf()
     sc = SparkContext(conf=conf)
@@ -43,20 +43,40 @@ def problem2(file_input, centroids_init_file):
 
     k = 20
     costs = []
+
+    if norm == 'e':
+        f = euclidean_cost
+    elif norm == 'm':
+        f = manhattan_cost
+    else:
+        return "er"
+
     for i in range(k):
 
-        clusters_map = points.map(lambda p: (manhattan_cost(p, C), p)).map(lambda p: (p[0][0], p[1]))
+        clusters_map = points.map(lambda p: (f(p, C), p)).map(lambda p: (p[0][0], p[1]))
+        min_dist_map = points.map(lambda p: (f(p, C), p)).map(lambda p: (p[1], p[0][1]))
 
-        print clusters_map.countByKey()
+        # clusters_map = points.map(lambda p: (euclidean_cost(p, C), p)).map(lambda p: (p[0][0], p[1]))
+        #     min_dist_map = points.map(lambda p: (manhattan_cost(p, C), p)).map(lambda p: (p[1], p[0][1]))
+        #     min_dist_map = points.map(lambda p: (euclidean_cost(p, C), p)).map(lambda p: (p[1], p[0][1]))
 
-        min_dist_map = points.map(lambda p: (manhattan_cost(p, C), p)).map(lambda p: (p[1], p[0][1]))
-        # min_dist_map = points.map(lambda p: (euclidean_cost(p, C), p)).map(lambda p: (p[1], p[0][1]))
         cost = 0
         for point in min_dist_map.collect():
-            cost += point[1]
+
+            # Manhattan
+            #cost += point[1]
+
+            # euclidean
+            if norm == 'e':
+                cost += point[1]**2
+            else:
+                cost += point[1]
+
         costs.append(cost)
 
         C = clusters_map.groupByKey().map(lambda c: np.mean([x for x in c[1]], 0)).collect()
+
+    sc.stop()
 
     return costs
 
