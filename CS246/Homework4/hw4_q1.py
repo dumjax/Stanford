@@ -101,7 +101,7 @@ def sgd(input_features, input_target, C, eta, eps):
     k = 0
     while delta_cost > eps:
 
-        if i == 0 and k == 0:
+        if i == 0 and mult == 0:
             delta_cost = delta_cost_init
 
         f_tmp = f_1
@@ -128,7 +128,7 @@ def sgd(input_features, input_target, C, eta, eps):
         print f_tmp
         print delta_cost
         costs.append(f_1)
-        (k, i) = divmod(i+1, n-1)
+        (mult, i) = divmod(i+1, n-1)
 
         print i
 
