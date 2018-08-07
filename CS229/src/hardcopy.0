@@ -1,0 +1,56 @@
+In [10]: logs
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-10-7755cd776caa> in <module>()
+----> 1 logs
+
+NameError: name 'logs' is not defined
+
+In [11]: log
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-11-9a115ebc25a0> in <module>()
+----> 1 log
+
+NameError: name 'log' is not defined
+
+In [12]: cat screenlog.0
+cat: screenlog.0: No such file or directory
+
+In [13]:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
